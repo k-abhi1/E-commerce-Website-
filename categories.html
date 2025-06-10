@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopEase - Your Online Store</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Categories - ShopEase</title>
+    <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Header -->
     <!-- Header/Navbar -->
    <header>
     <div class="container">
@@ -23,9 +24,9 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
-                <li><a href="categories.html">Categories</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
         
@@ -37,61 +38,30 @@
     </div>
 </header>
 
-    <!-- Search Form -->
-    <div class="search-form-container">
-        <form action="products.html" method="get">
-            <input type="search" name="search" placeholder="Search products...">
-            <button type="submit"><i class="fas fa-search"></i></button>
-        </form>
-        <span class="close-search"><i class="fas fa-times"></i></span>
-    </div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Summer Collection 2023</h1>
-                <p>Up to 50% Off on Selected Items</p>
-                <a href="products.html" class="btn">Shop Now</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Categories -->
-    <section class="categories">
+    <!-- Categories Section -->
+    <section class="categories-section">
         <div class="container">
             <h2 class="section-title">Shop by Category</h2>
             <div class="category-grid">
-                <div class="category-card">
-                    <img src="images/elec.jpg" alt="Electronics">
+                <div class="category-card" data-category="electronics">
+                    <img src="images/electronics.jpg" alt="Electronics">
                     <h3>Electronics</h3>
-                    <a href="products.html?category=electronics" class="btn">View Products</a>
+                    <a href="products.html?category=electronics" class="btn">Shop Now</a>
                 </div>
-                <div class="category-card">
-                    <img src="images/fishon.webp" alt="Fashion">
+                <div class="category-card" data-category="fashion">
+                    <img src="images/fashion.jpg" alt="Fashion">
                     <h3>Fashion</h3>
-                    <a href="products.html?category=fashion" class="btn">View Products</a>
+                    <a href="products.html?category=fashion" class="btn">Shop Now</a>
                 </div>
-                <div class="category-card">
-                    <img src="images/g.avif" alt="Home & Garden">
+                <div class="category-card" data-category="home">
+                    <img src="images/home.jpg" alt="Home & Garden">
                     <h3>Home & Garden</h3>
-                    <a href="products.html?category=home" class="btn">View Products</a>
+                    <a href="products.html?category=home" class="btn">Shop Now</a>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Featured Products -->
-    <section class="featured-products">
-        <div class="container">
-            <h2 class="section-title">Featured Products</h2>
-            <div class="product-grid">
-                <!-- Products will be loaded via JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -134,6 +104,7 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+
+    <script src="js/categories.js"></script>
 </body>
 </html>

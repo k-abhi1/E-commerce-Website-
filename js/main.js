@@ -11,7 +11,7 @@ const products = [
         title: "Wireless Bluetooth Headphones",
         price: 79.99,
         oldPrice: 99.99,
-        image: "images/headphones.jpg",
+        image: "../images/headphones.jpg",
         rating: 4.5,
         badge: "Sale"
     },
@@ -20,7 +20,7 @@ const products = [
         title: "Smart Watch Fitness Tracker",
         price: 129.99,
         oldPrice: 149.99,
-        image: "images/smartwatch.jpg",
+        image: "images/smartwatch.png",
         rating: 4.2,
         badge: "Popular"
     },
@@ -29,7 +29,7 @@ const products = [
         title: "4K Ultra HD Smart TV",
         price: 599.99,
         oldPrice: 699.99,
-        image: "images/tv.jpg",
+        image: "images/tv.avif",
         rating: 4.8,
         badge: "New"
     },
@@ -65,16 +65,16 @@ const products = [
         title: "Mechanical Keyboard",
         price: 89.99,
         oldPrice: 99.99,
-        image: "images/keyboard.jpg",
+        image: "images/mck.avif",
         rating: 4.4,
         badge: null
     },
     {
         id: 8,
-        title: "Noise Cancelling Headphones",
+        title: "Kurta",
         price: 199.99,
         oldPrice: 249.99,
-        image: "images/headphones2.jpg",
+        image: "images/kurta.avif",
         rating: 4.6,
         badge: "Best Seller"
     }
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Display featured products
 function displayFeaturedProducts() {
     // Get first 6 products for featured section
-    const featuredProducts = products.slice(0, 6);
+    const featuredProducts = products.slice(0,8);
     
     let output = '';
     

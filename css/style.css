@@ -1,9 +1,9 @@
 /* Base Styles */
 :root {
-    --primary-color: #2563eb;
-    --secondary-color: #1e40af;
+    --primary-color: #77e0e2;
+    --secondary-color: #37fe00bf;
     --accent-color: #3b82f6;
-    --dark-color: #1f2937;
+    --dark-color: #6d737c;
     --light-color: #f9fafb;
     --gray-color: #6b7280;
     --success-color: #10b981;
@@ -178,7 +178,7 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     height: 80vh;
-    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+    background: url('../images/bg1.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     margin-top: 70px;

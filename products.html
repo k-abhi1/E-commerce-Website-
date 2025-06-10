@@ -4,65 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products - ShopEase</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header (same as index.html) -->
+    <!-- Header (Same as Homepage) -->
     <header>
-        <!-- Copy header from index.html -->
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">ShopEase</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <a href="#" id="search-btn"><i class="fas fa-search"></i></a>
+                <a href="cart.html" id="cart-btn"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+            </div>
+        </div>
     </header>
 
     <!-- Products Section -->
     <section class="products-section">
         <div class="container">
-            <div class="products-header">
-                <h2 class="section-title">All Products</h2>
-                <div class="products-filter">
-                    <div class="filter-item">
-                        <label for="category-filter">Category:</label>
-                        <select id="category-filter">
-                            <option value="all">All Categories</option>
-                            <option value="electronics">Electronics</option>
-                            <option value="fashion">Fashion</option>
-                            <option value="home">Home & Garden</option>
-                        </select>
-                    </div>
-                    <div class="filter-item">
-                        <label for="sort-by">Sort by:</label>
-                        <select id="sort-by">
-                            <option value="featured">Featured</option>
-                            <option value="price-low">Price: Low to High</option>
-                            <option value="price-high">Price: High to Low</option>
-                            <option value="rating">Rating</option>
-                            <option value="newest">Newest</option>
-                        </select>
-                    </div>
+            <h2 class="section-title">All Products</h2>
+            <div class="products-filter">
+                <div class="filter-item">
+                    <label for="category-filter">Filter by:</label>
+                    <select id="category-filter">
+                        <option value="all">All Categories</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="fashion">Fashion</option>
+                        <option value="home">Home & Garden</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <label for="sort-by">Sort by:</label>
+                    <select id="sort-by">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                    </select>
                 </div>
             </div>
-            
             <div class="products-grid">
-                <!-- Products will be loaded via JavaScript -->
-            </div>
-            
-            <div class="pagination">
-                <button class="prev-btn disabled"><i class="fas fa-chevron-left"></i> Previous</button>
-                <div class="page-numbers">
-                    <span class="active">1</span>
-                    <span>2</span>
-                    <span>3</span>
-                    <span>4</span>
-                    <span>5</span>
-                </div>
-                <button class="next-btn">Next <i class="fas fa-chevron-right"></i></button>
+                <!-- Products loaded via JavaScript -->
             </div>
         </div>
     </section>
-
-    <!-- Footer (same as index.html) -->
-    <footer>
-        <!-- Copy footer from index.html -->
-    </footer>
 
     <script src="js/products.js"></script>
 </body>
